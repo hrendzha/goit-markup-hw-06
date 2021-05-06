@@ -659,6 +659,12 @@ ul {
     position: relative;
 }
 
+.terms-contract-label .input-icon-wrapper {
+    height: 15px;
+
+    margin-right: 8px;
+}
+
 .icon-in-input {
     position: absolute;
     top: 11px;
@@ -739,8 +745,6 @@ ul {
 
     border: 2px solid var(--primary-text-color);
     border-radius: 1px;
-
-    margin-right: 8.38px;
 }
 
 .custom-checkbox:checked {
