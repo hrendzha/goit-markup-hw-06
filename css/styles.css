@@ -539,7 +539,7 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-newsletter {
+.form-subscribe-newsletter {
     display: flex;
     align-items: flex-end;
 }
@@ -557,7 +557,7 @@ ul {
     height: 50px;
 }
 
-.form-field .footer-title {
+.form-subscribe-newsletter .footer-title {
     display: block;
 }
 
@@ -635,7 +635,7 @@ ul {
 }
 
 /* form order service */
-.order-service .form-input {
+.form-order-service .form-input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(29, 19, 19, 0.2);
@@ -645,30 +645,19 @@ ul {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label-wrapper .input-icon-wrapper:hover .form-input,
-.form-label-wrapper .input-icon-wrapper:focus .form-input {
+.form-order-service .form-input:hover {
     border-color: var(--accent-color);
 }
 
-.input-icon-wrapper:hover .icon-in-input,
-.input-icon-wrapper:focus .icon-in-input {
+.form-order-service .form-input:hover + .icon-in-input {
     fill: var(--accent-color);
-}
-
-.input-icon-wrapper {
-    position: relative;
-}
-
-.terms-contract-label .input-icon-wrapper {
-    height: 15px;
-
-    margin-right: 8px;
 }
 
 .icon-in-input {
     position: absolute;
-    top: 11px;
+    top: 29px;
     left: 12px;
+
     width: 18px;
     height: 18px;
 
@@ -695,12 +684,7 @@ ul {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input.text-area:hover,
-.form-input.text-area:focus {
-    border-color: var(--accent-color);
-}
-
-.order-service-head {
+.form-order-service-head {
     margin-bottom: 12px;
 
     font-weight: 700;
@@ -709,40 +693,46 @@ ul {
     text-align: center;
 }
 
-.form-label {
+.form-order-service .form-field {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
     margin-bottom: 10px;
 }
 
-.form-label:last-child {
+.form-order-service .form-field:last-child {
     margin-bottom: 20px;
 }
 
-.form-label:focus-within .icon-in-input {
+.form-order-service .form-field:focus-within .icon-in-input {
     fill: var(--accent-color);
 }
 
-.form-label-text {
+.form-order-service .form-field:focus-within .form-input {
+    outline-color: var(--accent-color);
+}
+
+.form-label {
     margin-bottom: 4px;
 
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-
     letter-spacing: 0.01em;
 
     color: var(--secondary-text-color);
 }
 
 .custom-checkbox {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    display: block;
     width: 16px;
     height: 15px;
 
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
     border: 2px solid var(--primary-text-color);
     border-radius: 1px;
 }
@@ -752,16 +742,23 @@ ul {
     border: none;
 }
 
+.check-position-wrapper {
+    position: relative;
+    margin-right: 8px;
+}
+
 .icon-custom-checkbox {
     position: absolute;
-    top: 4px;
-    left: 3px;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 
     width: 11px;
     height: 8px;
 }
 
-.terms-contract-label {
+.terms-contract-field {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -779,7 +776,7 @@ ul {
     color: var(--accent-color);
 }
 
-.order-service .universal-button {
+.form-order-service .universal-button {
     padding: 10px 55px;
     display: block;
     margin-left: auto;

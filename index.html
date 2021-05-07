@@ -455,7 +455,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="subscribe-newsletter">
+                <form class="form-subscribe-newsletter">
                     <div class="form-field">
                         <label for="subscribe-newsletter" class="footer-title">Подпишитесь на рассылку</label>
                         <input
@@ -482,65 +482,47 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <form class="order-service">
+                <form class="form-order-service">
                     <div class="form-group" role="group" aria-labelledby="leave-your-details-head">
-                        <p class="order-service-head" id="leave-your-details-head">
+                        <p class="form-order-service-head" id="leave-your-details-head">
                             Оставьте свои данные, мы вам перезвоним
                         </p>
 
                         <div class="form-label-wrapper">
-                            <label class="form-label">
-                                <span class="form-label-text">Имя</span>
-                                <div class="input-icon-wrapper">
-                                    <input
-                                        class="form-input"
-                                        type="text"
-                                        name="name"
-                                        required
-                                        minlength="2"
-                                        maxlength="15"
-                                        autocomplete="name"
-                                    />
-                                    <svg class="icon-in-input">
-                                        <use href="./images/sprite.svg#person"></use>
-                                    </svg>
-                                </div>
+                            <label class="form-field">
+                                <span class="form-label">Имя</span>
+                                <input
+                                    class="form-input"
+                                    type="text"
+                                    name="name"
+                                    required
+                                    minlength="2"
+                                    maxlength="15"
+                                    autocomplete="name"
+                                />
+                                <svg class="icon-in-input">
+                                    <use href="./images/sprite.svg#person"></use>
+                                </svg>
                             </label>
 
-                            <label class="form-label">
-                                <span class="form-label-text">Телефон</span>
-                                <div class="input-icon-wrapper">
-                                    <input
-                                        class="form-input"
-                                        type="tel"
-                                        name="phone-number"
-                                        required
-                                        autocomplete="tel"
-                                    />
-                                    <svg class="icon-in-input">
-                                        <use href="./images/sprite.svg#phone"></use>
-                                    </svg>
-                                </div>
+                            <label class="form-field">
+                                <span class="form-label">Телефон</span>
+                                <input class="form-input" type="tel" name="phone-number" required autocomplete="tel" />
+                                <svg class="icon-in-input">
+                                    <use href="./images/sprite.svg#phone"></use>
+                                </svg>
                             </label>
 
-                            <label class="form-label">
-                                <span class="form-label-text">Почта</span>
-                                <div class="input-icon-wrapper">
-                                    <input
-                                        class="form-input"
-                                        type="email"
-                                        name="e-mail"
-                                        required
-                                        autocomplete="email"
-                                    />
-                                    <svg class="icon-in-input">
-                                        <use href="./images/sprite.svg#email"></use>
-                                    </svg>
-                                </div>
+                            <label class="form-field">
+                                <span class="form-label">Почта</span>
+                                <input class="form-input" type="email" name="e-mail" required autocomplete="email" />
+                                <svg class="icon-in-input">
+                                    <use href="./images/sprite.svg#email"></use>
+                                </svg>
                             </label>
 
-                            <label class="form-label">
-                                <span class="form-label-text">Комментарий</span>
+                            <label class="form-field">
+                                <span class="form-label">Комментарий</span>
                                 <textarea
                                     class="form-input text-area"
                                     name="comment"
@@ -549,18 +531,18 @@
                             </label>
                         </div>
 
-                        <label class="terms-contract-label">
-                            <div class="input-icon-wrapper">
+                        <label class="terms-contract-field">
+                            <span class="check-position-wrapper">
                                 <input class="custom-checkbox" type="checkbox" name="terms-contract" required />
                                 <svg class="icon-custom-checkbox">
                                     <use href="./images/sprite.svg#check"></use>
                                 </svg>
-                            </div>
-                            <p class="terms-contract-text">
+                            </span>
+                            <span class="terms-contract-text">
                                 Соглашаюсь с рассылкой и принимаю
                                 <a class="terms-contract-link" href="">Условия договора</a>
-                            </p></label
-                        >
+                            </span>
+                        </label>
 
                         <button class="universal-button" type="submit">Отправить</button>
                     </div>
