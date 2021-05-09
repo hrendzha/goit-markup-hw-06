@@ -739,7 +739,11 @@ ul {
 
 .custom-checkbox:checked {
     background-color: var(--accent-color);
-    border: none;
+    border-color: var(--accent-color);
+}
+
+.custom-checkbox:checked + .icon-custom-checkbox {
+    opacity: 1;
 }
 
 .check-position-wrapper {
@@ -754,8 +758,10 @@ ul {
 
     transform: translate(-50%, -50%);
 
-    width: 11px;
-    height: 8px;
+    width: 16px;
+    height: 15px;
+
+    opacity: 0;
 }
 
 .terms-contract-field {
